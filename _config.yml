@@ -1,6 +1,7 @@
 url: "https://rcereceda.github.io"
-baseurl: "zendo-chudo"
-title: "Jekyllwind"
+baseurl: "/zendo-chudo"
+title: "Zendo Chudo"
+lang: "es"
 
 plugins:
   - jekyll-postcss
