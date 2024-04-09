@@ -1,12 +1,21 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<!doctype html>
+<html lang="{{ site.lang }}">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
     <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
   </head>
-  <body>
-    {{ content }}
+  <body class="flex h-full bg-zinc-100">
+    <div class="flex w-full">
+      <div class="fixed inset-0 flex justify-center sm:px-8">
+        <div class="flex w-full max-w-7xl lg:px-8">
+          <div class="w-full bg-white ring-1 ring-zinc-200"></div>
+        </div>
+      </div>
+      <div class="relative flex w-full flex-col">
+        <main class="flex-auto">{{content}}</main>
+      </div>
+    </div>
   </body>
 </html>
