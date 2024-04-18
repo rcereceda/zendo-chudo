@@ -4,10 +4,15 @@ title: "Zendo Chudo"
 lang: "es"
 
 plugins:
+  - jekyll-maps
   - jekyll-postcss
 
 postcss:
   cache: false
+
+maps:
+  google:
+    api_key: <YOUR_KEY>
 
 exclude:
   - package.json

@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'jekyll'
-gem 'webrick'
+gem 'jekyll-maps'
 gem 'jekyll-postcss'
+gem 'webrick'
