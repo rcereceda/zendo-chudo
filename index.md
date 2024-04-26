@@ -17,7 +17,7 @@ title: "Centro de práctica de Zazen"
         </div>
       </div>
     </div>
-    <div class="relative px-4 py-20 sm:py-36 sm:px-8 lg:px-12 bg-gradient-to-r from-emerald-900 to-emerald-700">
+    <div id="zendo" class="relative px-4 py-20 sm:py-36 sm:px-8 lg:px-12 bg-gradient-to-r from-emerald-900 to-emerald-700">
       <div class="flex">
         <div class="flex-grow">
         </div>
@@ -39,7 +39,7 @@ title: "Centro de práctica de Zazen"
         </div>
       </div>
     </div>
-    <div class="relative px-4 py-20 sm:py-36 sm:px-8 lg:px-12 bg-gradient-to-r from-yellow-600 to-orange-800">
+    <div id="ryunan" class="relative px-4 py-20 sm:py-36 sm:px-8 lg:px-12 bg-gradient-to-r from-yellow-600 to-orange-800">
       <div class="flex flex-col sm:flex-row">
         <div class="w-full flex justify-center sm:w-1/2">
           <img src="{{ '/assets/images/ryunan-bustamante-zenji.png' | relative_url }}" class="rounded-full h-48 w-48 sm:h-72 sm:w-72" alt="Circle Image">
