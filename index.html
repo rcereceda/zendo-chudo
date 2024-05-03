@@ -243,126 +243,65 @@ if (typeof Object.assign !== 'function') {
                       </svg>
                     </button>
 
-                    <div
+                    <nav
                       id="mobile-navigation"
                       class="absolute right-0 mt-2 w-48 hidden"
                     >
                       <ul
-                        class="space-y-2 bg-white/90 px-4 py-2 text-sm text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur"
-                      >
-                        <li>
-                          <a
-                            class="block px-4 py-2 hover:bg-zinc-100 hover:text-zinc-900"
-                            href="#zendo"
-                          >
-                            Zendo Chudo
-                          </a>
-                        </li>
-                        <li>
-                          <a
-                            class="block px-4 py-2 hover:bg-zinc-100 hover:text-zinc-900"
-                            href="#ryunan"
-                          >
-                            Ryúnan Bustamante Zenji
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  style="
-                    position: fixed;
-                    top: 1px;
-                    left: 1px;
-                    width: 1px;
-                    height: 0;
-                    padding: 0;
-                    margin: -1px;
-                    overflow: hidden;
-                    clip: rect(0, 0, 0, 0);
-                    white-space: nowrap;
-                    border-width: 0;
-                    display: none;
-                  "
-                ></div>
-                <nav
-                  id="desktop-navigation"
-                  class="pointer-events-auto hidden md:block"
-                >
-                  <ul
-                    class="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur"
-                  >
-                    <li>
-                      <a
-                        class="relative block px-3 py-2 transition hover:text-orange-900 min-w-max"
-                        href="#zendo"
-                      >
-                        Zendo Chudo
-                        <span
-                          class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-orange-500/0 via-orange-500/40 to-orange-500/0 hidden"
-                        >
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        class="relative block px-3 py-2 transition hover:text-orange-900 min-w-max"
-                        href="#ryunan"
-                      >
-                        Ryúnan Bustamante Zenji
-                        <span
-                          class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-orange-500/0 via-orange-500/40 to-orange-500/0 hidden"
-                        >
-                        </span
-                      ></a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-              <div class="flex justify-end md:flex-1"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+  class="bg-white/90 py-2 px-4 space-y-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur md:px-3 md:py-0 md:space-y-0 md:flex md:rounded-full"
+>
+  <li>
+    <a
+      class="block px-4 py-2 hover:text-orange-900 md:min-w-max md:px-3 md:relative md:transition"
+      href="#zendo"
+    >
+      Zendo Chudo
+      <span
+        class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-orange-500/0 via-orange-500/40 to-orange-500/0 hidden"
+      >
+      </span>
+    </a>
+  </li>
+  <li>
+    <a
+      class="block px-4 py-2 hover:text-orange-900 md:min-w-max md:px-3 md:relative md:transition"
+      href="#ryunan"
+    >
+      Ryúnan Bustamante Zenji
+      <span
+        class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-orange-500/0 via-orange-500/40 to-orange-500/0 hidden"
+      >
+      </span>
+    </a>
+  </li>
+</ul>
 
 <script>
-  // Get the navigation menu element
   var navigationMenu = document.getElementById("desktop-navigation");
 
-  // Get all the navigation links within the navigation menu
   var links = navigationMenu.querySelectorAll("a");
 
-  // Add click event listener to each link
   links.forEach(function (link) {
     link.addEventListener("click", function (event) {
-      event.preventDefault(); // Prevent default link behavior
+      event.preventDefault();
 
-      // Remove the 'text-orange-900' class and hide the <span> tag for all links
       links.forEach(function (link) {
         link.classList.remove("text-orange-900");
         link.querySelector("span").classList.add("hidden");
       });
 
-      // Add the 'text-orange-900' class and show the <span> tag for the clicked link
       this.classList.add("text-orange-900");
       this.querySelector("span").classList.remove("hidden");
 
-      // Get the target anchor element
       var targetId = this.getAttribute("href");
       var targetElement = document.querySelector(targetId);
 
-      // Scroll to the target element smoothly
       targetElement.scrollIntoView({
         behavior: "smooth",
       });
     });
   });
 
-  // Set the active link based on the current anchor when the page loads
   window.addEventListener("DOMContentLoaded", function () {
     var currentAnchor = window.location.hash;
     var activeLink = document.querySelector('a[href="' + currentAnchor + '"]');
@@ -377,6 +316,95 @@ if (typeof Object.assign !== 'function') {
     mobileNavigation.classList.toggle("hidden");
   }
 </script>
+
+                    </nav>
+                  </div>
+                </div>
+
+                <nav
+                  id="desktop-navigation"
+                  class="pointer-events-auto hidden md:block"
+                >
+                  <ul
+  class="bg-white/90 py-2 px-4 space-y-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur md:px-3 md:py-0 md:space-y-0 md:flex md:rounded-full"
+>
+  <li>
+    <a
+      class="block px-4 py-2 hover:text-orange-900 md:min-w-max md:px-3 md:relative md:transition"
+      href="#zendo"
+    >
+      Zendo Chudo
+      <span
+        class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-orange-500/0 via-orange-500/40 to-orange-500/0 hidden"
+      >
+      </span>
+    </a>
+  </li>
+  <li>
+    <a
+      class="block px-4 py-2 hover:text-orange-900 md:min-w-max md:px-3 md:relative md:transition"
+      href="#ryunan"
+    >
+      Ryúnan Bustamante Zenji
+      <span
+        class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-orange-500/0 via-orange-500/40 to-orange-500/0 hidden"
+      >
+      </span>
+    </a>
+  </li>
+</ul>
+
+<script>
+  var navigationMenu = document.getElementById("desktop-navigation");
+
+  var links = navigationMenu.querySelectorAll("a");
+
+  links.forEach(function (link) {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      links.forEach(function (link) {
+        link.classList.remove("text-orange-900");
+        link.querySelector("span").classList.add("hidden");
+      });
+
+      this.classList.add("text-orange-900");
+      this.querySelector("span").classList.remove("hidden");
+
+      var targetId = this.getAttribute("href");
+      var targetElement = document.querySelector(targetId);
+
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+      });
+    });
+  });
+
+  window.addEventListener("DOMContentLoaded", function () {
+    var currentAnchor = window.location.hash;
+    var activeLink = document.querySelector('a[href="' + currentAnchor + '"]');
+    if (activeLink) {
+      activeLink.classList.add("text-orange-900");
+      activeLink.querySelector("span").classList.remove("hidden");
+    }
+  });
+
+  function toggleMobileNavigation() {
+    var mobileNavigation = document.getElementById("mobile-navigation");
+    mobileNavigation.classList.toggle("hidden");
+  }
+</script>
+
+                </nav>
+              </div>
+              <div class="flex justify-end md:flex-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
 
         <main class="flex-auto"><div class="sm:px-8 mt-9">
   <div class="mx-auto w-full max-w-7xl lg:px-8">
@@ -453,10 +481,10 @@ if (typeof Object.assign !== 'function') {
               <div
                 class="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800"
               >
-                <div id='b109a044-4dfb-4b97-b3e9-2d2070f13da2' style='width:600px;height:400px;' class=' jekyll-map'></div>
+                <div id='2c08d9ce-d59c-4813-b970-6e33ff4cc7b4' style='width:600px;height:400px;' class=' jekyll-map'></div>
 <script type='text/javascript'>
   jekyllMaps.register(
-    'b109a044-4dfb-4b97-b3e9-2d2070f13da2',
+    '2c08d9ce-d59c-4813-b970-6e33ff4cc7b4',
     [{"latitude":"-33.451904296875","longitude":"-70.56785583496094","title":"Centro de práctica de Zazen","icon":null,"url":"/","image":"","popup_html":""}],
     {"baseUrl":"/zendo-chudo","useCluster":true,"showMarker":true,"showMarkerPopup":true,"markerIcon":null,"styles":"[]","customZoom":16}
   );
