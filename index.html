@@ -215,13 +215,10 @@ if (typeof Object.assign !== 'function') {
                 </div>
               </div>
               <div class="flex flex-1 justify-end md:justify-center">
-                <div
-                  class="pointer-events-auto md:hidden"
-                  data-headlessui-state=""
-                >
+                <div class="pointer-events-auto" data-headlessui-state="">
                   <div class="relative">
                     <button
-                      class="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur"
+                      class="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur md:hidden"
                       type="button"
                       aria-expanded="false"
                       data-headlessui-state=""
@@ -244,8 +241,8 @@ if (typeof Object.assign !== 'function') {
                     </button>
 
                     <nav
-                      id="mobile-navigation"
-                      class="absolute right-0 mt-2 w-48 hidden"
+                      id="main-navigation"
+                      class="absolute hidden right-0 mt-3 w-48 md:pointer-events-auto md:block md:relative md:w-auto md:mt-0 md:right-auto"
                     >
                       <ul
   class="bg-white/90 py-2 px-4 space-y-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur md:px-3 md:py-0 md:space-y-0 md:flex md:rounded-full"
@@ -277,7 +274,7 @@ if (typeof Object.assign !== 'function') {
 </ul>
 
 <script>
-  var navigationMenu = document.getElementById("desktop-navigation");
+  var navigationMenu = document.getElementById("main-navigation");
 
   var links = navigationMenu.querySelectorAll("a");
 
@@ -312,7 +309,7 @@ if (typeof Object.assign !== 'function') {
   });
 
   function toggleMobileNavigation() {
-    var mobileNavigation = document.getElementById("mobile-navigation");
+    var mobileNavigation = document.getElementById("main-navigation");
     mobileNavigation.classList.toggle("hidden");
   }
 </script>
@@ -320,82 +317,6 @@ if (typeof Object.assign !== 'function') {
                     </nav>
                   </div>
                 </div>
-
-                <nav
-                  id="desktop-navigation"
-                  class="pointer-events-auto hidden md:block"
-                >
-                  <ul
-  class="bg-white/90 py-2 px-4 space-y-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur md:px-3 md:py-0 md:space-y-0 md:flex md:rounded-full"
->
-  <li>
-    <a
-      class="block px-4 py-2 hover:text-orange-900 md:min-w-max md:px-3 md:relative md:transition"
-      href="#zendo"
-    >
-      Zendo Chudo
-      <span
-        class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-orange-500/0 via-orange-500/40 to-orange-500/0 hidden"
-      >
-      </span>
-    </a>
-  </li>
-  <li>
-    <a
-      class="block px-4 py-2 hover:text-orange-900 md:min-w-max md:px-3 md:relative md:transition"
-      href="#ryunan"
-    >
-      Ryúnan Bustamante Zenji
-      <span
-        class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-orange-500/0 via-orange-500/40 to-orange-500/0 hidden"
-      >
-      </span>
-    </a>
-  </li>
-</ul>
-
-<script>
-  var navigationMenu = document.getElementById("desktop-navigation");
-
-  var links = navigationMenu.querySelectorAll("a");
-
-  links.forEach(function (link) {
-    link.addEventListener("click", function (event) {
-      event.preventDefault();
-
-      links.forEach(function (link) {
-        link.classList.remove("text-orange-900");
-        link.querySelector("span").classList.add("hidden");
-      });
-
-      this.classList.add("text-orange-900");
-      this.querySelector("span").classList.remove("hidden");
-
-      var targetId = this.getAttribute("href");
-      var targetElement = document.querySelector(targetId);
-
-      targetElement.scrollIntoView({
-        behavior: "smooth",
-      });
-    });
-  });
-
-  window.addEventListener("DOMContentLoaded", function () {
-    var currentAnchor = window.location.hash;
-    var activeLink = document.querySelector('a[href="' + currentAnchor + '"]');
-    if (activeLink) {
-      activeLink.classList.add("text-orange-900");
-      activeLink.querySelector("span").classList.remove("hidden");
-    }
-  });
-
-  function toggleMobileNavigation() {
-    var mobileNavigation = document.getElementById("mobile-navigation");
-    mobileNavigation.classList.toggle("hidden");
-  }
-</script>
-
-                </nav>
               </div>
               <div class="flex justify-end md:flex-1"></div>
             </div>
@@ -481,10 +402,10 @@ if (typeof Object.assign !== 'function') {
               <div
                 class="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800"
               >
-                <div id='2c08d9ce-d59c-4813-b970-6e33ff4cc7b4' style='width:600px;height:400px;' class=' jekyll-map'></div>
+                <div id='e2456f35-1da8-4254-94d9-18a8ab7f04fd' style='width:600px;height:400px;' class=' jekyll-map'></div>
 <script type='text/javascript'>
   jekyllMaps.register(
-    '2c08d9ce-d59c-4813-b970-6e33ff4cc7b4',
+    'e2456f35-1da8-4254-94d9-18a8ab7f04fd',
     [{"latitude":"-33.451904296875","longitude":"-70.56785583496094","title":"Centro de práctica de Zazen","icon":null,"url":"/","image":"","popup_html":""}],
     {"baseUrl":"/zendo-chudo","useCluster":true,"showMarker":true,"showMarkerPopup":true,"markerIcon":null,"styles":"[]","customZoom":16}
   );
