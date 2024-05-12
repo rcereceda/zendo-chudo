@@ -4,7 +4,6 @@ title: "Zendo Chudo"
 lang: "es"
 
 plugins:
-  - jekyll-maps
   - jekyll-postcss
 
 postcss:

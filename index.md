@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Centro de práctica de Zazen"
+title: "Centro de práctica de Zen"
 ---
 
 <div class="sm:px-8 mt-9">
@@ -17,51 +17,31 @@ title: "Centro de práctica de Zazen"
         </div>
       </div>
     </div>
-    <div id="zendo" class="relative px-4 py-20 sm:py-36 sm:px-8 lg:px-12 bg-gradient-to-r from-emerald-900 to-emerald-700">
+    <div id="zendo" class="relative px-4 py-20 sm:py-36 sm:px-8 lg:px-12 bg-zinc-200">
       <div class="flex">
         <div class="flex-grow">
         </div>
         <div class="w-full sm:w-1/2">
-          <div class="mx-auto max-w-2xl lg:max-w-5xl">
-            <div class="max-w-2xl">
-              <div class="py-12 max-w-xl space-y-5 text-zinc-200">
-                <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
-                  El Zendo
-                </h2>
-                <div class="space-y-3">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus tempor massa ac euismod. Nunc vulputate consectetur nunc, ut aliquam tellus consectetur sed. Duis interdum sodales neque ut tincidunt.</p>
-
-                  <p>Morbi a auctor arcu, eget placerat lectus. Cras commodo ligula justo, quis lacinia erat molestie nec. Aliquam faucibus, elit quis rutrum malesuada, mauris lectus dignissim enim, et iaculis quam urna et eros. Vestibulum quis ipsum quis purus dictum auctor.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          {% include index/zendo.html %}
         </div>
       </div>
     </div>
-    <div id="ryunan" class="relative px-4 py-20 sm:py-36 sm:px-8 lg:px-12 bg-gradient-to-r from-yellow-600 to-orange-800">
-      <div class="flex flex-col sm:flex-row">
-        <div class="w-full flex justify-center sm:w-1/2">
-          <img src="{{ '/assets/images/ryunan-bustamante-zenji.png' | relative_url }}" class="rounded-full h-48 w-48 sm:h-72 sm:w-72" alt="Circle Image">
+    <div id="ryunan" class="relative px-8 py-20 md:py-36 lg:px-12 bg-emerald-800">
+      <div class="flex flex-col md:flex-row">
+        <div class="w-full flex justify-center md:w-1/2">
+          <img src="{{ '/assets/images/ryunan-bustamante-zenji.png' | relative_url }}" class="rounded-full h-48 w-48 md:h-72 md:w-72" alt="Circle Image">
         </div>
-        <div class="w-full sm:w-1/2">
-          <div class="mx-auto max-w-2xl lg:max-w-5xl">
-            <div class="py-12 max-w-2xl sm:py-0">
-              <div class="max-w-xl space-y-5 text-zinc-200">
-                <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
-                  Ryúnan Bustamante Zenji
-                </h2>
-                <div class="space-y-3">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dapibus tempor massa ac euismod. Nunc vulputate consectetur nunc, ut aliquam tellus consectetur sed. Duis interdum sodales neque ut tincidunt.</p>
-
-                  <p>Morbi a auctor arcu, eget placerat lectus. Cras commodo ligula justo, quis lacinia erat molestie nec. Aliquam faucibus, elit quis rutrum malesuada, mauris lectus dignissim enim, et iaculis quam urna et eros. Vestibulum quis ipsum quis purus dictum auctor.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="w-full md:w-1/2">
+          {% include index/ryunan.html %}
         </div>
       </div>
     </div>
-
+    <div id="location" class="relative px-4 py-12 sm:py-16 sm:px-8 lg:px-12 bg-zinc-200">
+      <div class="flex">
+        <div class="w-full">
+          {% include index/location.html %}
+        </div>
+      </div>
+    </div>
   </div>
 </div>
