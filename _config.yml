@@ -1,6 +1,6 @@
 url: "https://rcereceda.github.io"
 baseurl: "/zendo-chudo"
-title: "Zendo Chudo"
+title: "Zendo Chūdō"
 lang: "es"
 
 plugins:
@@ -8,10 +8,6 @@ plugins:
 
 postcss:
   cache: false
-
-maps:
-  google:
-    api_key: <YOUR_KEY>
 
 exclude:
   - package.json

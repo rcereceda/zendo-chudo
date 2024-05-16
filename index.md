@@ -1,27 +1,29 @@
 ---
 layout: default
-title: "Centro de práctica de Zen"
+title: "Centro de práctica Zen"
 ---
 
 <div class="sm:px-8 mt-9">
   <div class="mx-auto w-full max-w-7xl lg:px-8">
-    <div class="relative px-4 py-60 sm:px-8 sm:py-96 lg:px-12" style="background-image: url({{ '/assets/images/bg-inicio.jpg' | relative_url }});">
-      <div class="mx-auto max-w-2xl lg:max-w-5xl">
-        <div class="mx-auto md:text-center">
-          <h1 class="text-4xl font-bold tracking-tight text-zinc-800 sm:text-6xl">
-              {{ site.title }}
-          </h1>
-          <p class="text-lg mt-6 text-base text-zinc-600 sm:text-xl">
-            {{ page.title }}
-          </p>
-        </div>
-      </div>
-    </div>
-    <div id="zendo" class="relative px-4 py-20 sm:py-36 sm:px-8 lg:px-12 bg-zinc-200">
-      <div class="flex">
+    <div class="relative px-4 pt-60 pb-72 sm:px-8 sm:pt-80 sm:pb-96 lg:px-12" style="background-image: url({{ '/assets/images/bg-home.jpeg' | relative_url }});">
+      <div class="flex sm:pb-8">
         <div class="flex-grow">
         </div>
         <div class="w-full sm:w-1/2">
+          <div class="mx-auto md:text-center">
+          <h1 class="text-4xl font-bold tracking-tight text-zinc-200 sm:text-6xl">
+              {{ site.title }}
+          </h1>
+          <p class="text-lg mt-6 text-base text-zinc-300 sm:text-xl">
+            {{ page.title }}
+          </p>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div id="zendo" class="relative px-8 py-20 sm:py-32 sm:px-16 bg-gradient-to-b from-orange-950 to-amber-900">
+      <div class="flex">
+        <div class="w-full md:w-1/2">
           {% include index/zendo.html %}
         </div>
       </div>
