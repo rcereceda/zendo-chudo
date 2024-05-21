@@ -79,7 +79,7 @@
                       class="absolute hidden right-0 mt-3 w-48 md:pointer-events-auto md:block md:relative md:w-auto md:mt-0 md:right-auto"
                     >
                       <ul
-  class="bg-white/90 py-2 px-4 space-y-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur md:px-3 md:py-0 md:space-y-0 md:flex md:rounded-full"
+  class="bg-white/90 py-2 px-4 space-y-2 text-sm font-medium text-zinc-800 drop-shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur md:px-3 md:py-0 md:space-y-0 md:flex md:rounded-full"
 >
   <li>
     <a
@@ -108,9 +108,9 @@
   <li>
     <a
       class="block px-4 py-2 hover:text-orange-900 md:min-w-max md:px-3 md:relative md:transition"
-      href="#location"
+      href="#activities"
     >
-      Ubicación y Horarios <span
+      Próximas Actividades <span
   class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-orange-500/0 via-orange-500/40 to-orange-500/0 hidden"
 >
 </span>
@@ -120,9 +120,9 @@
   <li>
     <a
       class="block px-4 py-2 hover:text-orange-900 md:min-w-max md:px-3 md:relative md:transition"
-      href="#activities"
+      href="#location"
     >
-      Próximas Actividades <span
+      Ubicación y Horarios <span
   class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-orange-500/0 via-orange-500/40 to-orange-500/0 hidden"
 >
 </span>
@@ -203,8 +203,8 @@
         </div>
       </div>
     </div>
-    <div id="zendo" class="relative px-8 py-20 sm:py-32 sm:px-16 bg-gradient-to-b from-orange-950 to-amber-900">
-      <div class="flex">
+    <div id="zendo" class="relative px-8 py-20 sm:py-32 sm:px-24 bg-gradient-to-b from-orange-950 to-amber-900">
+      <div class="flex flex-col md:flex-row">
         <div class="w-full md:w-1/2">
           <div class="mx-auto max-w-2xl lg:max-w-5xl">
   <div class="max-w-2xl">
@@ -235,12 +235,15 @@
 </div>
 
         </div>
+        <div class="w-full flex justify-center md:w-1/2">
+          <img src="/zendo-chudo/assets/images/zen-circle.png" class="h-auto w-auto md:h-96 md:w-96" alt="Zen Circle Image" />
+        </div>
       </div>
     </div>
-    <div id="ryunan" class="relative px-8 py-20 md:py-36 lg:px-12 bg-emerald-800">
+    <div id="ryunan" class="relative px-8 py-20 md:py-36 sm:px-12 bg-emerald-800">
       <div class="flex flex-col md:flex-row">
         <div class="w-full flex justify-center md:w-1/2">
-          <img src="/zendo-chudo/assets/images/ryunan-bustamante-zenji.png" class="rounded-full h-48 w-48 md:h-72 md:w-72" alt="Circle Image" />
+          <img src="/zendo-chudo/assets/images/ryunan-bustamante-zenji.png" class="rounded-full h-48 w-48 md:h-72 md:w-72" alt="Ryunan Image" />
         </div>
         <div class="w-full md:w-1/2">
           <div class="mx-auto max-w-2xl lg:max-w-5xl">
@@ -282,6 +285,42 @@
   </div>
 </div>
 
+        </div>
+      </div>
+    </div>
+    <div id="activities" class="relative pt-20 sm:pt-24 bg-gradient-to-r from-sky-950 to-sky-700">
+      <h2 class="text-3xl font-bold text-center text-zinc-200 pb-16 sm:text-4xl">Próximas Actividades</h2>
+      <div class="flex flex-col-reverse px-8 sm:px-24 md:flex-row">
+        <div class="w-full md:w-1/2">
+          <div class="mx-auto max-w-2xl lg:max-w-5xl">
+  <div class="max-w-2xl">
+    <div class="py-12 max-w-xl space-y-12 text-zinc-200">
+      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+        Retiro de Meditación Zen
+      </h2>
+      <div class="space-y-10">
+        <div class="text-2xl font-bold">Junto a Ryùnan Bustamante Zenji</div>
+        <div class="border-t border-sky-800"></div>
+        <div class="space-y-3">
+          <div class="text-2xl">15 al 18 de Agosto 2024</div>
+          <div class="text-xl">Santo Domingo, Chile</div>
+        </div>
+        <div class="border-t border-sky-800"></div>
+        <div class="italic">*Cupos Limitados</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+        <div class="w-full flex justify-center md:w-1/2">
+          <img src="/zendo-chudo/assets/images/buda-statue.png" class="w-72 md:w-auto" alt="Buda Image" />
+        </div>
+      </div>
+      <div class="bg-gradient-to-t from-zinc-800 to-transparent">
+        <div class="text-xl font-bold text-zinc-200 py-5 px-8 sm:px-24 sm:text-2xl">
+          <span>Información e Inscripciones:</span>
+          <span>zenryunan@gmail.com / +56969656617</span>
         </div>
       </div>
     </div>
@@ -333,31 +372,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-        </div>
-      </div>
-    </div>
-    <div id="activities" class="relative px-4 py-12 sm:py-16 sm:px-8 lg:px-12 bg-gradient-to-r from-sky-950 to-sky-700">
-      <div class="flex">
-        <div class="w-full md:w-1/2">
-          <div class="mx-auto max-w-2xl lg:max-w-5xl">
-  <div class="max-w-2xl">
-    <div class="py-12 max-w-xl space-y-12 text-zinc-200">
-      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
-        Retiro de Meditación Zen
-      </h2>
-      <div class="space-y-8">
-        <div class="text-2xl font-bold">Junto a Jorge Ryùnan Bustamante</div>
-
-        <div class="border-t font-bold border-blue-200 py-4 space-y-3">
-          <div class="text-xl">15 al 18 de Agosto 2024</div>
-
-          <div class="text-lg">Santo Domingo, Chile</div>
         </div>
       </div>
     </div>
