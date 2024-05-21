@@ -21,20 +21,40 @@ title: "Centro de práctica Zen"
         </div>
       </div>
     </div>
-    <div id="zendo" class="relative px-8 py-20 sm:py-32 sm:px-16 bg-gradient-to-b from-orange-950 to-amber-900">
-      <div class="flex">
+    <div id="zendo" class="relative px-8 py-20 sm:py-32 sm:px-24 bg-gradient-to-b from-orange-950 to-amber-900">
+      <div class="flex flex-col md:flex-row">
         <div class="w-full md:w-1/2">
           {% include index/zendo.html %}
         </div>
+        <div class="w-full flex justify-center md:w-1/2">
+          <img src="{{ '/assets/images/zen-circle.png' | relative_url }}" class="h-auto w-auto md:h-96 md:w-96" alt="Zen Circle Image">
+        </div>
       </div>
     </div>
-    <div id="ryunan" class="relative px-8 py-20 md:py-36 lg:px-12 bg-emerald-800">
+    <div id="ryunan" class="relative px-8 py-20 md:py-36 sm:px-12 bg-emerald-800">
       <div class="flex flex-col md:flex-row">
         <div class="w-full flex justify-center md:w-1/2">
-          <img src="{{ '/assets/images/ryunan-bustamante-zenji.png' | relative_url }}" class="rounded-full h-48 w-48 md:h-72 md:w-72" alt="Circle Image">
+          <img src="{{ '/assets/images/ryunan-bustamante-zenji.png' | relative_url }}" class="rounded-full h-48 w-48 md:h-72 md:w-72" alt="Ryunan Image">
         </div>
         <div class="w-full md:w-1/2">
           {% include index/ryunan.html %}
+        </div>
+      </div>
+    </div>
+    <div id="activities" class="relative pt-20 sm:pt-24 bg-gradient-to-r from-sky-950 to-sky-700">
+      <h2 class="text-3xl font-bold text-center text-zinc-200 pb-16 sm:text-4xl">Próximas Actividades</h2>
+      <div class="flex flex-col-reverse px-8 sm:px-24 md:flex-row">
+        <div class="w-full md:w-1/2">
+          {% include index/activities.html %}
+        </div>
+        <div class="w-full flex justify-center md:w-1/2">
+          <img src="{{ '/assets/images/buda-statue.png' | relative_url }}" class="w-72 md:w-auto" alt="Buda Image">
+        </div>
+      </div>
+      <div class="bg-gradient-to-t from-zinc-800 to-transparent">
+        <div class="text-xl font-bold text-zinc-200 py-5 px-8 sm:px-24 sm:text-2xl">
+          <span>Información e Inscripciones:</span>
+          <span>zenryunan@gmail.com / +56969656617</span>
         </div>
       </div>
     </div>
