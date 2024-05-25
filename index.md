@@ -21,7 +21,7 @@ title: "Centro de práctica Zen"
         </div>
       </div>
     </div>
-    <div id="zendo" class="relative px-8 py-20 sm:py-32 sm:px-24 bg-gradient-to-b from-orange-950 to-amber-900">
+    {% comment %} <div id="zendo" class="relative px-8 py-20 sm:py-32 sm:px-24 bg-gradient-to-b from-orange-950 to-amber-900">
       <div class="flex flex-col md:flex-row">
         <div class="w-full md:w-1/2">
           {% include index/zendo.html %}
@@ -40,8 +40,8 @@ title: "Centro de práctica Zen"
           {% include index/ryunan.html %}
         </div>
       </div>
-    </div>
-    <div id="activities" class="relative pt-20 sm:pt-24 bg-gradient-to-r from-sky-950 to-sky-700">
+    </div> {% endcomment %}
+    <div id="activities" class="relative pt-20 sm:pt-24 bg-gradient-to-r from-zinc-950 to-sky-900">
       <h2 class="text-3xl font-bold text-center text-zinc-200 pb-16 sm:text-4xl">Próximas Actividades</h2>
       <div class="flex flex-col-reverse px-8 sm:px-24 md:flex-row">
         <div class="w-full md:w-1/2">
@@ -52,14 +52,22 @@ title: "Centro de práctica Zen"
         </div>
       </div>
       <div class="bg-gradient-to-t from-zinc-800 to-transparent">
-        <div class="text-xl font-bold text-zinc-200 py-5 px-8 sm:px-24 sm:text-2xl">
+        <div class="italic text-zinc-200 py-5 px-8 sm:px-24 sm:text-2xl">
           <span>Información e Inscripciones:</span>
-          <span>zenryunan@gmail.com / +56969656617</span>
+          <span>zenryunan@gmail.com / +569 6965 6617</span>
         </div>
       </div>
     </div>
-    <div id="location" class="relative px-4 py-12 sm:py-16 sm:px-8 lg:px-12 bg-zinc-200">
+    <div id="schedule" class="relative px-8 py-16 sm:py-24 sm:px-24 bg-zinc-800">
       <div class="flex">
+        <div class="w-full">
+          {% include index/schedule.html %}
+        </div>
+      </div>
+    </div>
+    <div id="location" class="relative">
+      <div class="bg-gradient-to-b from-zinc-800 to-zinc-200 h-8"></div>
+      <div class="flex px-4 py-8 sm:px-8 sm:py-10 lg:px-12 bg-zinc-200">
         <div class="w-full">
           {% include index/location.html %}
         </div>
