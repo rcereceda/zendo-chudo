@@ -5,19 +5,19 @@ title: "Centro de práctica Zen"
 
 <div class="sm:px-8 mt-9">
   <div class="mx-auto w-full max-w-7xl lg:px-8">
-    <div class="relative px-4 pt-60 pb-72 sm:px-8 sm:pt-80 sm:pb-96 lg:px-12" style="background-image: url({{ '/assets/images/bg-home.jpeg' | relative_url }});">
+    <div class="relative px-4 bg-center pt-48 pb-96 sm:py-72 sm:px-8 lg:px-12" style="background-image: url({{ '/assets/images/bg-zendo.jpeg' | relative_url }});">
       <div class="flex sm:pb-8">
         <div class="flex-grow">
         </div>
-        <div class="w-full sm:w-1/2">
-          <div class="mx-auto md:text-center">
-          <h1 class="text-4xl font-bold tracking-tight text-zinc-200 sm:text-6xl">
-              {{ site.title }}
-          </h1>
-          <p class="text-lg mt-6 text-base text-zinc-300 sm:text-xl">
-            {{ page.title }}
-          </p>
-        </div>
+        <div class="w-full xl:w-1/2">
+          <div class="mx-auto drop-shadow-lg xl:text-center">
+            <h1 class="text-4xl font-bold tracking-tight text-zinc-200 sm:text-6xl">
+                {{ site.title }}
+            </h1>
+            <p class="text-lg mt-6 text-base text-zinc-300 sm:text-xl">
+              {{ page.title }}
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -41,7 +41,7 @@ title: "Centro de práctica Zen"
         </div>
       </div>
     </div> {% endcomment %}
-    <div id="activities" class="relative pt-20 sm:pt-24 bg-gradient-to-r from-zinc-950 to-sky-900">
+    {% comment %} <div id="activities" class="relative pt-20 sm:pt-24 bg-gradient-to-r from-zinc-950 to-sky-900">
       <h2 class="text-3xl font-bold text-center text-zinc-200 pb-16 sm:text-4xl">Próximas Actividades</h2>
       <div class="flex flex-col-reverse px-8 sm:px-24 md:flex-row">
         <div class="w-full md:w-1/2">
@@ -57,6 +57,9 @@ title: "Centro de práctica Zen"
           <span>zenryunan@gmail.com / +569 6965 6617</span>
         </div>
       </div>
+    </div> {% endcomment %}
+    <div id="activities" class="relative">
+      <img src="{{ '/assets/images/sesshin.jpeg' | relative_url }}" class="h-auto w-auto" alt="Sesshin Image">
     </div>
     <div id="schedule" class="relative px-8 py-16 sm:py-24 sm:px-24 bg-zinc-800">
       <div class="flex">
