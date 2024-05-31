@@ -5,16 +5,16 @@ title: "Centro de práctica Zen"
 
 <div class="sm:px-8 mt-9">
   <div class="mx-auto w-full max-w-7xl lg:px-8">
-    <div class="relative px-4 bg-center pt-48 pb-96 sm:py-72 sm:px-8 lg:px-12" style="background-image: url({{ '/assets/images/bg-zendo.jpeg' | relative_url }});">
+    <div class="relative px-4 bg-top md:bg-bottom pt-40 pb-80 sm:pt-96 sm:pb-72 sm:px-8 lg:px-12" style="background-image: url({{ '/assets/images/bg-main.jpg' | relative_url }});">
       <div class="flex sm:pb-8">
         <div class="flex-grow">
         </div>
-        <div class="w-full xl:w-1/2">
-          <div class="mx-auto drop-shadow-lg xl:text-center">
-            <h1 class="text-4xl font-bold tracking-tight text-zinc-200 sm:text-6xl">
+        <div class="w-full md:w-3/4 lg:w-1/2">
+          <div class="mx-auto space-y-6 md:text-center">
+            <h1 class="text-4xl font-bold tracking-tight text-zinc-300 sm:text-6xl">
                 {{ site.title }}
             </h1>
-            <p class="text-lg mt-6 text-base text-zinc-300 sm:text-xl">
+            <p class="text-lg text-zinc-400 font-medium sm:text-xl">
               {{ page.title }}
             </p>
           </div>
