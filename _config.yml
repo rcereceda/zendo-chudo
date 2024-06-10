@@ -1,9 +1,16 @@
-url: "https://rcereceda.github.io"
-title: "Zendo Chūdō"
-lang: "es"
+url: https://zendochudo.cl
+title: Zendo Chūdō
+description: Centro de práctica Zen. Practicamos Zazen presencial y online. Estamos en Santiago de Chile, comuna de La Reina, Metro Plaza Egaña.
+lang: es
+social:
+  name: Zendo Chūdō
+  links:
+    - https://web.facebook.com/zendochudo
+    - https://www.instagram.com/zendochudo/
 
 plugins:
   - jekyll-postcss
+  - jekyll-seo-tag
 
 postcss:
   cache: false
