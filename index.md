@@ -58,9 +58,9 @@ title: "Centro de práctica Zen"
         </div>
       </div>
     </div> {% endcomment %}
-    <div id="activities" class="relative">
+    {% comment %} <div id="activities" class="relative">
       <img src="{{ '/assets/images/jornada.jpeg' | relative_url }}" class="h-auto w-auto" alt="Jornada Image">
-    </div>
+    </div> {% endcomment %}
     <div id="schedule" class="relative px-8 py-16 sm:py-24 sm:px-24 bg-zinc-800">
       <div class="flex">
         <div class="w-full">
