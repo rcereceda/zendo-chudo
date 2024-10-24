@@ -24,6 +24,21 @@ title: "Sutras"
       <div id="shigu-seigan-mon" class="hidden">
         {% include sutras/shigu_seigan_mon.html %}
       </div>
+      <div id="kannon-gyo" class="hidden">
+        {% include sutras/kannon_gyo.html %}
+      </div>
+      <div id="fueko" class="hidden">
+        {% include sutras/fueko.html %}
+      </div>
+      <div id="ji_ho_san_shi" class="hidden">
+        {% include sutras/ji_ho_san_shi.html %}
+      </div>
+      <div id="takkesa_ge" class="hidden">
+        {% include sutras/takkesa_ge.html %}
+      </div>
+      <div id="gyohatsu_nenju" class="hidden">
+        {% include sutras/gyohatsu_nenju.html %}
+      </div>
     </div>
   </div>
 </div>
