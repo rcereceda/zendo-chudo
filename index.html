@@ -136,6 +136,18 @@
 
     </a>
   </li>
+  <li>
+    <a
+      class="block px-4 py-2 hover:text-orange-900 md:min-w-max md:px-3 md:relative md:transition"
+      href="/sutras"
+    >
+      Sutras <span
+  class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-orange-500/0 via-orange-500/40 to-orange-500/0 hidden"
+>
+</span>
+
+    </a>
+  </li>
 </ul>
 
 <script>
@@ -144,6 +156,8 @@
   var links = navigationMenu.querySelectorAll("a");
 
   links.forEach(function (link) {
+    if (link.getAttribute("href") === "/sutras") return;
+
     link.addEventListener("click", function (event) {
       event.preventDefault();
 
