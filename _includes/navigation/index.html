@@ -25,6 +25,14 @@
       Ubicación {% include navigation/selected.html %}
     </a>
   </li>
+  <li>
+    <a
+      class="block px-4 py-2 hover:text-orange-900 md:min-w-max md:px-3 md:relative md:transition"
+      href="/sutras"
+    >
+      Sutras {% include navigation/selected.html %}
+    </a>
+  </li>
 </ul>
 
 <script>
@@ -33,6 +41,8 @@
   var links = navigationMenu.querySelectorAll("a");
 
   links.forEach(function (link) {
+    if (link.getAttribute("href") === "/sutras") return;
+
     link.addEventListener("click", function (event) {
       event.preventDefault();
 
