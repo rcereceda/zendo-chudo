@@ -1,14 +1,17 @@
+{% assign activities = site.data.notion_activities | sort: "order" %}
 <ul
   class="bg-white/90 py-2 px-4 space-y-2 text-sm font-medium text-zinc-800 drop-shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur md:px-3 md:py-0 md:space-y-0 md:flex md:rounded-full"
 >
-  <!-- <li>
+  {% if activities and activities.size > 0 %}
+  <li>
     <a
       class="block px-4 py-2 hover:text-orange-900 md:min-w-max md:px-3 md:relative md:transition"
       href="#activities"
     >
       Próximas Actividades {% include navigation/selected.html %}
     </a>
-  </li> -->
+  </li>
+  {% endif %}
   <li>
     <a
       class="block px-4 py-2 hover:text-orange-900 md:min-w-max md:px-3 md:relative md:transition"
