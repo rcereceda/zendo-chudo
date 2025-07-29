@@ -1,6 +1,8 @@
 ---
 layout: default
 title: "Centro de práctica Zen"
+description: "Centro de práctica Zen en Santiago de Chile. Practicamos Zazen presencial y online. Ubicados en La Reina, Metro Plaza Egaña."
+keywords: "zen, zazen, meditación, budismo, santiago, chile, la reina, plaza egaña, práctica zen, centro zen"
 ---
 
 <div class="sm:px-8 mt-9">
