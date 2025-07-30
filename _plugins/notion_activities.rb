@@ -12,7 +12,7 @@ module Jekyll
     def generate(site)
       activities = fetch_notion_activities
       site.data['notion_activities'] = activities
-      
+
       if activities.any?
         puts "✅ Loaded #{activities.length} activities from Notion"
       else
@@ -25,7 +25,7 @@ module Jekyll
     def notion_token
       @notion_token ||= ENV['NOTION_TOKEN']
     end
-    
+
     def database_id
       @database_id ||= ENV['NOTION_DATABASE_ID']
     end
@@ -33,9 +33,9 @@ module Jekyll
     def fetch_notion_activities
       return [] unless notion_token && database_id
 
-      begin        
+      begin
         response = query_notion_database(database_id, notion_token)
-        
+
         if response.success?
           activities = parse_notion_response(response.parsed_response)
           puts "✅ Successfully fetched #{activities.length} activities from Notion"
@@ -64,11 +64,11 @@ module Jekyll
 
     def parse_notion_response(response)
       activities = []
-      
+
       results = response['results'] || []
       results.each_with_index do |page, index|
         properties = page['properties']
-        
+
         activity = {
           'order' => results.length - 1 - index,
           'title' => extract_text(properties['title']),
@@ -77,16 +77,16 @@ module Jekyll
           'notes' => extract_text(properties['notes']),
           'emoji' => extract_text(properties['emoji']) || '📅'
         }
-        
+
         activities << activity if !activity['title'].empty?
       end
-      
+
       activities
     end
 
     def extract_text(property)
       return '' unless property
-      
+
       case property['type']
       when 'title'
         property['title']&.first&.dig('plain_text') || ''
