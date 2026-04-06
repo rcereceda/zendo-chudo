@@ -23,7 +23,7 @@ keywords: "zen, zazen, meditación, budismo, santiago, chile, la reina, plaza eg
         </div>
       </div>
     </div>
-    {% assign activities = site.data.notion_activities | sort: "order" %}
+    {% assign activities = site.data.notion_activities | sort: "position" %}
     {% if activities and activities.size > 0 %}
     <div id="activities" class="relative px-8 py-16 sm:py-24 sm:px-24 bg-gradient-to-b from-zinc-950 to-sky-900">
       <div class="flex">

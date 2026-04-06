@@ -70,7 +70,7 @@ module Jekyll
         properties = page['properties']
 
         activity = {
-          'order' => results.length - 1 - index,
+          'position' => extract_number(properties['position']),
           'title' => extract_text(properties['title']),
           'days' => extract_text(properties['days']),
           'time' => extract_text(properties['time']),
@@ -96,6 +96,17 @@ module Jekyll
         property['select']&.dig('name') || ''
       else
         ''
+      end
+    end
+
+    def extract_number(property)
+      return 0 unless property
+
+      case property['type']
+      when 'number'
+        property['number'] || 0
+      else
+        0
       end
     end
   end
